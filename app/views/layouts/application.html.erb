@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LavinVillegas</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="main">
+<%= yield %>
+</div>
+<div id="footer">
+<div id="contactos"><%= image_tag("Logo Contacto.png", class: "contacto_minimizado")%><br />
+<div class="contacto_maximizado"><%= image_tag("Iconos hacia abajo.png")%></div></div>
+<div id ="direccion">Av. La Dehesa 1822, Of. 703, Lo Barnechea, Santiago</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#logo{
+	margin-top: 5%;
+	margin-bottom:2%;
+	clear: both;
+}
+#logo, #carousel{
+	text-align:center
+}
+#slides li {
+	width:1275px;
+	height:243px;	
+	float:left;
+}
+#slides ul{
+	width:5100px;
+	list-style: none;
+	overflow: hidden;
+	
+	position:relative;
+}
+#slides{
+	width:1275px;
+	height: 243px;
+	overflow: hidden;
+}
