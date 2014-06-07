@@ -1,6 +1,8 @@
 LavinVillegas::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.serve_static_assets = true
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.assets.compile = true
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -77,4 +79,6 @@ LavinVillegas::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+
 end

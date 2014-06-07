@@ -7,12 +7,14 @@ gem 'rails', '4.0.4'
 gem 'heroku'
 group :production do
   gem 'pg'
+ 
 end        
 
 group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 

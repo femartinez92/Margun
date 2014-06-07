@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+body{
+	font-family: 'Poly', serif;
+	color:#ffffff;
+	height: 100%;
+	text-align: center;
+}
+#footer{
+	background-color: #5b245a;
+	text-align:center;
+	clear:both;
+	width:95%;
+	position: absolute;
+	bottom:5px;
+}
+.contacto_maximizado{
+	witdh:100%;
+	display:none;
+}
+/* line 5, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  clear: both;
+}
+
+/* line 10, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo, #carousel {
+  text-align: center;
+}
+
+/* line 13, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides li {
+  width: 1275px;
+  height: 243px;
+  float: left;
+}
+
+/* line 18, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides ul {
+  width: 5100px;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 25, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides {
+  width: 1275px;
+  height: 243px;
+  overflow: hidden;
+}
