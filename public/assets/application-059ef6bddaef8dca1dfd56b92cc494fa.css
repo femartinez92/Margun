@@ -1,0 +1,204 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ html,body{
+ 	font-family: 'Lato', sans-serif;
+ 	color:#ffffff;
+ 	height: 100%;
+ 	text-align: center;
+ 	margin-left: 0px;
+ }
+ body{
+ 	height: 500px;
+ }
+ footer{
+ 	margin-top: 10px;
+ 	padding-top: 10px;
+ 	background: #5b245a;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+
+
+ 	/*padding-top: 10px;
+ 	background-color: #5b245a;
+ 	text-align:center;
+ 	position:fixed;
+ 	bottom:0;
+ 	width:1278px;
+ 	left:50%;
+ 	margin-left: -639px;*/
+
+ }
+ .contacto_minimizado{
+ 	margin:0px auto;
+ 	cursor: pointer;
+ }
+ 
+ .info{
+ 	text-align: left;
+ 	padding-left: 5px;
+ 	vertical-align: middle;
+ 	font-weight: lighter;
+ 	font-size: 14px;
+ }
+
+ .contacto_maximizado{
+ 	witdh:100%;
+ 	height: 0px;
+ 	display:none;
+ 	margin-top:10px;
+ 	margin-bottom: 10px;
+ }
+ .contacto_maximizado table{
+ 	margin: 0 auto;
+ 	border-spacing: 0px;
+ }
+ .nombre{
+ 	text-align: left;
+ }
+ .borde{
+ 	border-right: 1px solid;
+ 	border-color: white;
+ }
+ .borde_degradado{
+ 	border-right: 1px solid;
+ 	border-left:0px;
+    border-image:
+      linear-gradient(to bottom,white, rgba(91, 36, 90, 1)) 1 100%;
+ }
+  .borde_degradado_top{
+ 	border-right: 1px solid;
+ 	border-left:0px;
+    border-image:
+      linear-gradient(to top,white, rgba(91, 36, 90, 1)) 1 100%;
+ }
+ .pleft{
+ 	padding-left: 20px;
+ }
+ .pright{
+ 	padding-right:20px;
+ }
+ .iconos{
+ 	margin-top: 1px;
+ }
+#direccion{
+	border-top: 2px solid;
+	border-color:white; 
+	margin:15px 0 10px 0;
+}
+/* line 5, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  clear: both;
+}
+
+/* line 12, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo text-align:center
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 19, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#wrapper {
+  width: 100%;
+  min-width: 900px;
+  height: 243px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+/* line 28, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#carousel div {
+  height: 243px;
+  float: left;
+}
+
+/* line 32, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#carousel img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* line 36, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#title {
+  text-align: center;
+  width: 100%;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+
+/* line 43, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#title h3 {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 -3px 3px rgba(0, 0, 0, 0.3), 3px 0 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #fff;
+  margin: 0;
+}
+
+/* line 56, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#title a {
+  color: #fff;
+}
+
+/* line 59, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#title a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+}
+
+/* line 63, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#pager {
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  padding-top: 2px;
+  margin: 105px 0 0 -60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* line 75, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#pager a.selected span {
+  background: #666;
+}
+
+/* line 78, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#pager a {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* line 82, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#pager span {
+  border-radius: 10px;
+  background: #ccc;
+  text-indent: -100px;
+  line-height: 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+}
