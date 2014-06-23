@@ -7,7 +7,7 @@
 	margin-bottom:2%;
 	clear: both;
 }
-#logo, #carousel{
+#logo{
 	text-align:center
 	img {
 		display: block;
@@ -15,29 +15,6 @@
 		margin-right: auto;
 	}
 }
-#slides li {
-	width:1280px;
-	height: 243px;	
-	float:left;
-}
-#slides ul{
-	width:5120px;
-	list-style: none;
-	overflow: scroll;
-	position:relative;
-	-webkit-padding-start:0px;
-	-webkit-margin-after:0em;
-}
-#slides{
-	width:1280px;
-	height: 243px;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	display:block;
-}
-
-
 #wrapper {
 	width: 100%;
 	min-width: 900px;
