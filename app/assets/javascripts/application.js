@@ -91,6 +91,7 @@ $('.contacto_minimizado').click(
 	function(){
 		$('.contacto_maximizado').css('display', 'block').animate({"height": "80px"}, 500);
 		$(this).css('cursor', 'default');
+		$(this).css('display','none');
 		//$('.contacto_maximizado').animate({"height": "70px"}, 500);
 	}//,function(){
 	//	if($('.contacto_maximizado').height()!='0px'){
@@ -107,6 +108,7 @@ $('.contacto_maximizado').hover(
 			$(this).css('display', 'none');
 		});
 		$('.contacto_minimizado').css('cursor', 'pointer');
+		$('.contacto_minimizado').css('display', 'block');
 	}
 	);
 
