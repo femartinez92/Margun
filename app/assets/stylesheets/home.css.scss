@@ -21,11 +21,12 @@
 	float:left;
 }
 #slides ul{
-	width:5100px;
+	width:5120px;
 	list-style: none;
-	overflow: hidden;
+	overflow: scroll;
 	position:relative;
 	-webkit-padding-start:0px;
+	-webkit-margin-after:0em;
 }
 #slides{
 	width:1280px;
@@ -34,4 +35,79 @@
 	margin-left: auto;
 	margin-right: auto;
 	display:block;
+}
+
+
+#wrapper {
+	width: 100%;
+	min-width: 900px;
+	height: 243px;
+	margin: -80px 0 0 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+#carousel div {
+	height: 243px;
+	float: left;
+}
+#carousel img {
+	min-width: 100%;
+	min-height: 100%;
+}
+#title {
+	text-align: center;
+	width: 100%;
+	margin-top: -10px;
+	position: absolute;
+	top: 50%;
+}
+#title h3 {
+	text-shadow: 
+		0 3px 3px rgba( 0, 0, 0, 0.3 ),
+		0 -3px 3px rgba( 0, 0, 0, 0.3 ),
+		3px 0 3px rgba( 0, 0, 0, 0.3 ),
+		-3px 0 3px rgba( 0, 0, 0, 0.3 );
+ 
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #fff;
+	margin: 0;
+}
+#title a {
+	color: #fff;
+}
+#title a:hover {
+	background: rgba( 0, 0, 0, 0.5 );
+	padding: 2px 5px;
+}
+#pager {
+	border-radius: 20px;
+	background: #fff;
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	padding-top: 2px;
+	margin: 105px 0 0 -60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#pager a.selected span {
+	background: #666;
+}
+#pager a {
+	display: inline-block;
+	padding: 5px;
+}
+#pager span {
+	border-radius: 10px;
+	background: #ccc;
+	text-indent: -100px;
+	line-height: 0;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
 }
