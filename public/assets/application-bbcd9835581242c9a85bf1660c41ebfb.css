@@ -8,9 +8,10 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
  html,body{
  	font-family: 'Lato', sans-serif;
  	color:#ffffff;
@@ -66,3 +67,44 @@
  .pright{
  	padding-right:20px;
  }
+/* line 5, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  clear: both;
+}
+
+/* line 12, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo text-align:center
+img, #carousel text-align:center
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 18, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides li {
+  width: 1278px;
+  height: 243px;
+  float: left;
+}
+
+/* line 23, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides ul {
+  width: 5100px;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  -webkit-padding-start: 0px;
+}
+
+/* line 30, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides {
+  width: 1278px;
+  height: 243px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

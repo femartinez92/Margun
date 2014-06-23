@@ -9,9 +9,14 @@
 }
 #logo, #carousel{
 	text-align:center
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 #slides li {
-	width:1275px;
+	width:1278px;
 	height:243px;	
 	float:left;
 }
@@ -19,11 +24,14 @@
 	width:5100px;
 	list-style: none;
 	overflow: hidden;
-	
 	position:relative;
+	-webkit-padding-start:0px;
 }
 #slides{
-	width:1275px;
+	width:1278px;
 	height: 243px;
 	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
 }

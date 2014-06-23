@@ -23,9 +23,8 @@ $(document).ready(function() {
 	var run = setInterval('rotate()', speed);	
 	
 	//grab the width and calculate left value
-	var item_width = $('#slides li').outerWidth(); 
-	var left_value = item_width * (-1); 
-        
+	var item_width = $('#slides li').width(); 
+	var left_value = item_width * (-1);         
     //move the last item before first item, just in case user click prev button
 	$('#slides li:first').before($('#slides li:last'));
 	
@@ -38,7 +37,7 @@ $(document).ready(function() {
 		var left_indent = parseInt($('#slides ul').css('left')) + item_width;
 
 		//slide the item            
-		$('#slides ul').animate({'left' : left_indent}, 1000,function(){    
+		$('#slides ul').animate({'left' : left_indent}, 1200,function(){    
 
             //move the last item and put it as first item            	
 			$('#slides li:first').before($('#slides li:last'));           
