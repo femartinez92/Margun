@@ -89,7 +89,7 @@ $('#slides').hover(
 
 $('.contacto_minimizado').click(
 	function(){
-		$('.contacto_maximizado').css('display', 'block').animate({"height": "70px"}, 500);
+		$('.contacto_maximizado').css('display', 'block').animate({"height": "80px"}, 500);
 		$(this).css('cursor', 'default');
 		//$('.contacto_maximizado').animate({"height": "70px"}, 500);
 	}//,function(){
