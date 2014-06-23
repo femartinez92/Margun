@@ -16,16 +16,28 @@
  	color:#ffffff;
  	height: 100%;
  	text-align: center;
+ 	margin-left: 0px;
+ }
+ body{
+ 	height: 500px;
  }
  footer{
+ 	margin-top: 10px;
  	padding-top: 10px;
+ 	background: #5b245a;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+
+
+ 	/*padding-top: 10px;
  	background-color: #5b245a;
  	text-align:center;
  	position:fixed;
  	bottom:0;
  	width:1278px;
  	left:50%;
- 	margin-left: -639px;
+ 	margin-left: -639px;*/
 
  }
  .contacto_minimizado{
@@ -83,6 +95,5 @@
 #direccion{
 	border-top: 2px solid;
 	border-color:white; 
-	margin:5px 0 5px 0;
-	padding-top: 5px;
+	margin:15px 0 10px 0;
 }
