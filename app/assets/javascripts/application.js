@@ -18,9 +18,13 @@
 //Slider animation -------------------------
 $(document).ready(function() {
 
+	
+
+
+
 	//rotation speed and timer
 	var speed = 5000;
-	var run = setInterval('rotate()', speed);	
+	var run = setInterval('rotate()', speed);
 	
 	//grab the width and calculate left value
 	var item_width = $('#slides li').width(); 
@@ -55,7 +59,9 @@ $(document).ready(function() {
 
     //if user clicked on next button
     $('#next').click(function() {
-
+		updateProgress(0);
+		start = new Date();
+		animateUpdate();
 		//get the right position
 		var left_indent = parseInt($('#slides ul').css('left')) - item_width;
 		
@@ -78,14 +84,43 @@ $(document).ready(function() {
 
 //if mouse hover, pause the auto rotation, otherwise rotate it
 $('#slides').hover(
-
 	function() {
+		updateProgress(0);
+		blocked = true;		
 		clearInterval(run);
 	}, 
 	function() {
 		run = setInterval('rotate()', speed);	
+		blocked = false;
+		start = new Date();
+		animateUpdate();
 	}
-	); 
+); 
+
+
+	var start = new Date();
+	var timeoutVal = Math.floor(speed/100);
+	var blocked = false;
+	animateUpdate();
+
+	function updateProgress(percentage) {
+    	$('#pbar_innerdiv').css("width", percentage + "%");    	
+	}
+
+	function animateUpdate() {
+		if (!blocked){
+	    	var now = new Date();
+	    	var timeDiff = now.getTime() - start.getTime();
+	    	var perc = Math.round((timeDiff/speed)*100);
+	    	console.log(perc);
+	      	if (perc <= 100) {
+	       		updateProgress(perc);
+	       		setTimeout(animateUpdate, timeoutVal);
+		    }
+	  	}
+	}
+
+
 
 $('.contacto_minimizado').click(
 	function(){
@@ -98,23 +133,24 @@ $('.contacto_minimizado').click(
 	//	}
 	// }
 	);
-$('.contacto_maximizado').hover(
+$('footer').hover(
 	function(){
 		//$(this).css('display', 'block');
 		//$(this).animate({"height": "70px"}, 500);
 	},function(){
-		$(this).animate({"height": "0px"}, 400,function(){
-			$(this).css('display', 'none');
+		$('.contacto_maximizado').animate({"height": "0px"}, 400,function(){
+			$('.contacto_maximizado').css('display', 'none');
 		});
 		$('.contacto_minimizado').css('cursor', 'pointer');
 	}
-	);
+);
+
 
 
 });
 
 function rotate() {
-	$('#next').click();
+	$('#next').click();	
 }
 //Termino slider ------------------------------------------------------------------------
 
