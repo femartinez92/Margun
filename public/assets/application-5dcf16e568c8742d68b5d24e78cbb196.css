@@ -8,36 +8,25 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
  html,body{
  	font-family: 'Lato', sans-serif;
  	color:#ffffff;
  	height: 100%;
  	text-align: center;
- 	margin-left: 0px;
- }
- body{
- 	height: 500px;
  }
  footer{
- 	margin-top: 10px;
  	padding-top: 10px;
- 	background: #5b245a;
-    width:100%;
-    position:fixed;
-    bottom:0px;
-
-
- 	/*padding-top: 10px;
  	background-color: #5b245a;
  	text-align:center;
  	position:fixed;
  	bottom:0;
  	width:1278px;
  	left:50%;
- 	margin-left: -639px;*/
+ 	margin-left: -639px;
 
  }
  .contacto_minimizado{
@@ -95,5 +84,47 @@
 #direccion{
 	border-top: 2px solid;
 	border-color:white; 
-	margin:15px 0 10px 0;
+	margin:5px 0 5px 0;
+	padding-top: 5px;
+}
+/* line 5, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  clear: both;
+}
+
+/* line 12, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#logo text-align:center
+img, #carousel text-align:center
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 18, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides li {
+  width: 1280px;
+  height: 243px;
+  float: left;
+}
+
+/* line 23, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides ul {
+  width: 5100px;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  -webkit-padding-start: 0px;
+}
+
+/* line 30, C:/Users/Fernando/Margun/LavinVillegas/app/assets/stylesheets/home.css.scss */
+#slides {
+  width: 1280px;
+  height: 243px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

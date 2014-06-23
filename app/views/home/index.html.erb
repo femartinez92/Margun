@@ -1,20 +1,15 @@
 <div id="logo">
 	<%= image_tag("Logo.png")%>
 </div>
-<div id="carousel">
-<div id="slides">
-<div id="next"></div>
-<div id="prev"></div>
-<ul>
-<li><%= image_tag("Foto Martillo.png")%></li>
-<li><%= image_tag("Foto Eolico.png")%></li>
-<li><%= image_tag("Foto Lapiz.png")%></li>
-<li><%= image_tag("Foto Mineria.png")%></li>
-</ul>
-</div>
-</div>
-<div id = "progress_bar">
-	<div id="pbar_outerdiv" style="width: 100px; height: 8px; border: 1px solid grey; z-index: 1; position: relative; border-radius: 5px; -moz-border-radius: 5px;">
-	<div id="pbar_innerdiv" style="background-color: #920190; z-index: 2; height: 100%; width: 0%;"></div>
-	<div id="pbar_innertext" style="z-index: 3; position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: black; font-weight: bold; text-align: center;"></div>
+<div id="wrapper">
+	<div id="carousel">
+		<div><%= image_tag("Foto Martillo.png")%></div>
+		<div><%= image_tag("Foto Eolico.png")%></div>
+		<div><%= image_tag("Foto Lapiz.png")%></div>
+		<div><%= image_tag("Foto Mineria.png")%></div>
+	</div>
+	<div id="title">
+		<!--<h3>The Netherlands covered in snow</h3> <p><a href="http://gigapica.geenstijl.nl/2013/01/the_netherlands_covered_in_sno.html">images from gigapica.geenstijl.nl</a></p>-->
+	</div>
+	<div id="pager"></div>
 </div>
